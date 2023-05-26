@@ -1,2 +1,2 @@
-Displays a Menu in the Format Specified adhering the rules stated
+Displays a Menu in the Format Specified adhering to the rules stated
 

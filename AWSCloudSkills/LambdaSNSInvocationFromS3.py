@@ -6,8 +6,6 @@ import urllib
 s3_client = boto3.client('s3')
 sns_client = boto3.client('sns')
 
-
-
 def lambda_handler (event, context):
     
     # To retrieve the bucket name and the just uploaded file from the last event (which is the first one of the list 'Records')
@@ -25,8 +23,7 @@ def lambda_handler (event, context):
     print(message)
 
     # This message will be printed in the CloudWatch logs
-    print("those are the contents of the file : \n" , contents)
-   
+    print("those are the contents of the file : \n" , contents)   
    
    # To associate the message to the SNS topic 
     sns_response = sns_client.publish(
